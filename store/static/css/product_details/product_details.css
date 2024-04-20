@@ -1,0 +1,21 @@
+.product_description {
+  color: #fff;
+}
+
+.product_selling_price {
+  color: #00ffff;
+}
+
+.product_original_price {
+  color: #808080;
+}
+
+.input-group{
+  width: 150px;
+  position: relative;
+  top: -8px;
+}
+
+.text_success{
+  color: #00ffff;
+}

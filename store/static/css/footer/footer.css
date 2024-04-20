@@ -1,0 +1,44 @@
+
+
+.row {
+  position: relative;
+  top: 30px;
+}
+
+.text-loadcase {
+  position: relative;
+  left: -50px;
+}
+
+.text {
+  color: #808080;
+  position: relative;
+  left: -150px;
+}
+
+.text1 {
+  color: #808080;
+  position: relative;
+  right: 20px;
+}
+
+.list-unstyled {
+  position: relative;
+  right: 20px;
+}
+/* Add space between slider and footer */
+.footer {
+  margin-top: 50px; /* Adjust as needed */
+}
+
+.col-lg-4 {
+  color: #808080;
+  position: relative;
+  right: -150px;
+}
+
+.text3 {
+  color: #808080;
+  position: relative;
+  right: -60px;
+}

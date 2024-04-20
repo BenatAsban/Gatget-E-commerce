@@ -1,0 +1,17 @@
+.old_price{
+    font-weight:bold;
+    color: #808080;
+  }
+
+  .new_price{
+    font-weight:bold;
+    color: #00ffff;
+    position: absolute;
+    left: 14px;
+    bottom: 10px;
+  }
+
+  .card-text{
+    font-weight:500;
+    color: #00ffff;
+  }
