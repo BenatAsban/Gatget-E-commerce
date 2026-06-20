@@ -1,5 +1,6 @@
 from pathlib import Path
 import os
+import dj_database_url
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-5u(s2mvzx-*qg$j$ou6f_&6t7(!vnb#3l)mhvnr34mu5orsp4z'
@@ -50,14 +51,9 @@ TEMPLATES = [
 WSGI_APPLICATION = 'benat_app.wsgi.application'
 
 DATABASES = {
-'default': {
-'ENGINE': 'django.db.backends.mysql',
-'NAME': 'gadget_db',
-'USER': 'root',
-'PASSWORD': 'Benatsurya@15',
-'HOST': '127.0.0.1',
-'PORT': '3306',
-}
+    'default': dj_database_url.config(
+        default=os.environ.get("DATABASE_URL")
+    )
 }
 
 LANGUAGE_CODE = 'en-us'
