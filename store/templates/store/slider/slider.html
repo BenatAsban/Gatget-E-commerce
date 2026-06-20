@@ -1,0 +1,49 @@
+{% load static %}
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+    .carousel-item img {
+      max-width: 100%;
+      height: auto;
+      max-height: 500px; 
+    }
+
+    .carousel-inner{
+      position: relative;
+      top:30px;
+    }
+</style>
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="500">
+    <div class="carousel-item active" data-aos="fade-right">
+      <img src="{% static 'images/image1.jpg' %}" class="d-block w-100" alt="First slide">
+    </div>
+    <div class="carousel-item" data-aos="fade-right" data-aos-delay="300">
+      <img src="{% static 'images/image4.jpg' %}" class="d-block w-100" alt="Second slide">
+    </div>
+    <div class="carousel-item" data-aos="fade-right" data-aos-delay="600">
+      <img src="{% static 'images/image5.jpg' %}" class="d-block w-100" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-V4cMqf2AB81gghI6XJKkDiIjXTBK2rTrNEeqUFei+I7fZcJSxd5YV4fmZb+2+iSa" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- AOS Library -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>

@@ -1,0 +1,26 @@
+/* Styles for the search bar */
+.search {
+  background-color: aqua ;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -30px;
+}
+
+.search-input {
+  width: 300px;
+  height: 30px;
+  padding: 0 1rem;
+  border-radius: 50px;
+  border: none;
+  position: absolute;
+  left: 270px;;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+}

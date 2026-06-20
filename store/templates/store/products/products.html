@@ -1,0 +1,39 @@
+{% extends "store/main/main.html" %} {% load static %} {% block title %} Turbo
+Gatget Website {% endblock %}
+ {% block content %}
+
+  <div class="container" style="margin-top:70px;min-height:600px;" div data-aos="fade-down" data-aos-duration="2000" data-aos-delay="500">
+    <div class="row">
+      <div class="col-12">
+        <h4 class="mb-3">Gatgets</h4>
+        <hr style="border-color: #b8bfc2" />
+        {% include 'store/inc/message.html' %}
+
+      </div>
+      {% for item in products %}
+      <div class="col-md-4 col-lg-3">
+        <div class="card my-3">
+          <img
+            src="{{item.product_image.url}}"
+            class="card-image-top"
+            alt="products"
+          />
+          <a href="{% url 'product_details' category_name item.name %}">
+            <div class="card-body">
+              <h5 class="card-title text-primary"><span class='card-text'>{{item.name}}</span></h5>
+              <p class="card-start">
+                <span class="floot-start old_price"
+                  ><s>₹{{ item.original_price | stringformat:'d'}}</s></span
+                >
+                <span class="float-end new_price"
+                  >₹{{ item.selling_price | stringformat:'d'}}</span
+                >
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}

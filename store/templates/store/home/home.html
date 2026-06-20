@@ -1,0 +1,26 @@
+{% extends "store/main/main.html" %} {% load static %} {% block title %} Turbo
+Gatget Website {% endblock %} {% block content %}
+
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
+<div class="search" style="margin-top:5px;" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="500">
+  <input class="search-input" type="search" placeholder="Search" />
+</div>
+{% include 'store/inc/message.html' %}
+
+{% include "store/slider/slider.html" %}
+
+<!-- AOS Library -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+{% endblock %}
