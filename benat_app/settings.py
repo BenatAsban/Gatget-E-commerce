@@ -47,7 +47,10 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+<<<<<<< HEAD
     'whitenoise.middleware.WhiteNoiseMiddleware',
+=======
+>>>>>>> 82e200804460f0782cd0c3a3217f8d8693355879
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -85,11 +88,19 @@ WSGI_APPLICATION = 'benat_app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
+<<<<<<< HEAD
         'NAME': 'gadget_db',
         'USER': 'root',
         'PASSWORD': 'Benatsurya@15',
         'HOST': '127.0.0.1',
         'PORT': '3306',
+=======
+        'NAME': 'benatasban',
+        'HOST': 'localhost',
+        'USER': 'root',
+        'PASSWORD': 'Benatsurya@15',
+        'PORT': '3306'
+>>>>>>> 82e200804460f0782cd0c3a3217f8d8693355879
     }
 }
 
@@ -130,6 +141,7 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
+<<<<<<< HEAD
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIRS = [
@@ -138,6 +150,14 @@ STATICFILES_DIRS = [
 
 MEDIA_URL = '/images/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+=======
+MEDIA_URL = '/images/'
+MEDIA_ROOT = 'static'
+
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'), )
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+>>>>>>> 82e200804460f0782cd0c3a3217f8d8693355879
 
 
 # Default primary key field type
